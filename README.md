@@ -1,8 +1,8 @@
-# Movie Budget and Revenue Analysis
+# Movie Budget Linear Regression Analysis
 
-Analyses whether higher film production budgets lead to higher worldwide box-office revenue using linear regression and Seaborn visualisation.
+Applies linear regression to 5,000+ films to quantify how production budget predicts worldwide box-office revenue, with Seaborn visualisation across decades.
 
-The analysis investigates a fundamental question in the film industry: does spending more money on production reliably translate to higher box-office returns? Starting from a raw, currency-formatted dataset, the project works through data cleaning, exploratory analysis, and statistical visualisation to reach a quantified answer. It explores which films reported zero revenue and why, how the relationship differs between domestic-only and international releases, and how budget-to-revenue trends have shifted across decades.
+The analysis investigates a fundamental question in the film industry: does spending more money on production reliably translate to higher box-office returns? A scikit-learn `LinearRegression` model is fitted on budget vs. worldwide gross to extract the slope, intercept, and R², giving a concrete numerical answer to that question. Before modelling, the project works through data cleaning, exploratory analysis, and statistical visualisation — including `regplot()` overlays that compare the regression line for older films against newer ones to show how the relationship has shifted over time.
 
 The dataset (`cost_revenue_dirty.csv`) contains 5,391 films spanning over a century of cinema, with each row recording a film's production budget, worldwide gross, and domestic gross in raw currency-string format (e.g. `"$110,000"`). The cleaning pipeline strips currency symbols and commas, converts columns to float, and removes duplicates before any analysis begins. Release dates are parsed to extract decade buckets for temporal comparison.
 
@@ -27,7 +27,7 @@ No external APIs or credentials are required. All data is committed directly to 
 ## 1. Quick start
 
 ```bash
-git clone https://github.com/xavier-oc-programming/movie-budget-revenue-analysis.git
+git clone https://github.com/xavier-oc-programming/movie-budget-linear-regression-analysis.git
 cd movie-budget-revenue-analysis
 pip install -r requirements.txt
 jupyter notebook
