@@ -45,18 +45,22 @@ data/cost_revenue_dirty.csv
         ▼
 pd.read_csv()  →  raw DataFrame (currency strings, mixed types)
         │
+        │  ── Cleaning ───────────────────────────────────────────
         ├── nested loop strip "$" and ","
         ├── .astype(float)             →  numeric budget / revenue columns
         ├── .dropna() / .drop_duplicates()
         │
+        │  ── Subsetting ─────────────────────────────────────────
         ├── boolean filter == 0        →  zero-revenue films investigation
         ├── .loc[] multi-condition     →  international vs domestic subset
         ├── .dt.year // 10 * 10        →  decade column
         │
+        │  ── Visualisation ──────────────────────────────────────
         ├── sns.scatterplot()          →  budget vs worldwide gross scatter
         ├── bubble chart (size=domestic gross)
         ├── sns.regplot() ×2           →  old films / new films regression lines
         │
+        │  ── Regression Modelling ───────────────────────────────
         └── sklearn LinearRegression
               .fit(X, y)
               .intercept_, .coef_      →  model equation
