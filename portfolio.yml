@@ -6,9 +6,9 @@ featured: false
 tags: data-analysis, visualisation, python, machine-learning, CI-CD
 tech_stack: Python, pandas, NumPy, Matplotlib, Seaborn, scikit-learn, Jupyter, GitHub Actions
 repo_url: https://github.com/xavier-oc-programming/movie-budget-linear-regression-analysis
-live_url: https://xavier-oc-programming.github.io/movie-budget-linear-regression-analysis/notebook/
+live_url: https://xavier-oc-programming.github.io/movie-budget-linear-regression-analysis/notebook_web_render/
 demo_url:
-notebook_url: https://xavier-oc-programming.github.io/movie-budget-linear-regression-analysis/notebook/
+notebook_url: https://xavier-oc-programming.github.io/movie-budget-linear-regression-analysis/notebook_web_render/
 
 short_description: |
   Across 5,384 films from 1915–2018, a linear regression on budget vs. worldwide gross gives a slope of 3.12 (R²=55.77%) — every dollar of budget is associated with $3.12 in revenue, yet 37.28% of films still failed to recoup their costs.

@@ -33,14 +33,14 @@ jobs:
 
       - name: Move to notebook directory
         run: |
-          mkdir -p notebook
-          mv index.html notebook/index.html
+          mkdir -p notebook_web_render
+          mv index.html notebook_web_render/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: notebook
-          destination_dir: notebook
+          publish_dir: notebook_web_render
+          destination_dir: notebook_web_render
           keep_files: true

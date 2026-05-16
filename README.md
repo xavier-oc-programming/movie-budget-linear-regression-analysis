@@ -128,7 +128,7 @@ movie-budget-linear-regression-analysis/
 │   ├── budget_vs_revenue_bubble.png     # Budget vs worldwide gross over time
 │   └── regression_new_films.png         # Regression line for films 1970+
 │
-├── notebook/
+├── notebook_web_render/
 │   └── index.html                       # Rendered notebook (GitHub Pages)
 │
 ├── docs/
